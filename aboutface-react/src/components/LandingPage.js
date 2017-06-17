@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Resume from './Resume'
 
 class LandingPage extends Component {
     constructor(props) {
@@ -12,6 +13,7 @@ class LandingPage extends Component {
         return (
             <div className="landing-wrapper">
                 <h1>Landing Page</h1>
+                <Resume />
             </div>
         );
     }
