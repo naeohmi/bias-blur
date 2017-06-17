@@ -23,6 +23,10 @@ class LandingPage extends Component {
     render() {
         return (
             <div className="landing-wrapper">
+<<<<<<< HEAD
+=======
+
+>>>>>>> fe767cadb97c3cbd35240b416ac001fcfad960f0
                 <Carousel>
                     <Carousel.Item>
                         <img width={900} height={500} alt="ladies-working-together" src="/images/startup-photos.jpg" />
