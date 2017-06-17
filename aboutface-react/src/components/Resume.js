@@ -63,10 +63,6 @@ export default class Resume extends Component {
                 <div>
                     {this.state.html ? <div dangerouslySetInnerHTML={{ __html: this.state.html }} /> : null}
                 </div>
-<<<<<<< HEAD
-=======
-
->>>>>>> fe767cadb97c3cbd35240b416ac001fcfad960f0
             </div>
         )
     }
