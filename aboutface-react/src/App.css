@@ -1,12 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Comfortaa:300,400,700|Open+Sans:300,400,600,800');
 
-
-    /*font-family: 'Comfortaa', cursive;*/
+html {
+    font-family: 'Comfortaa', cursive;
 /*font-family: 'Open Sans', sans-serif;*/
-
+}
 
 /*---------NAVIGATION---------*/
-
+.title {
+    font-family: 'Comfortaa', cursive;
+    color: blue;
+    text-transform: uppercase;
+}
 
 .navigation-wrapper {
   display: inline-block;
