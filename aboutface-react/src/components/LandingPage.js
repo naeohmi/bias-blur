@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
-<<<<<<< HEAD
 import { Bootstrap, Carousel } from 'react-bootstrap';
-=======
 import Resume from './Resume'
->>>>>>> 4308718db31e2a38b7a35bad7aafcff1479198d1
 
 class LandingPage extends Component {
     constructor(props) {
@@ -24,7 +21,6 @@ class LandingPage extends Component {
 
     render() {
         return (
-<<<<<<< HEAD
             <Carousel activeIndex={this.state.index} direction={this.state.direction} onSelect={this.handleSelect}>
                 <Carousel.Item>
                     <img width={900} height={500} alt="900x500" src="/assets/carousel.png" />
@@ -48,12 +44,10 @@ class LandingPage extends Component {
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>
-=======
             <div className="landing-wrapper">
                 <h1>Landing Page</h1>
                 <Resume />
             </div>
->>>>>>> 4308718db31e2a38b7a35bad7aafcff1479198d1
         );
     }
 }
