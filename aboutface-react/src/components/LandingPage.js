@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Bootstrap, Carousel } from 'react-bootstrap';
+import { Bootstrap, Jumbotron, Carousel, Button } from 'react-bootstrap';
 import Resume from './Resume'
 
 class LandingPage extends Component {
@@ -21,32 +21,41 @@ class LandingPage extends Component {
 
     render() {
         return (
-            <Carousel activeIndex={this.state.index} direction={this.state.direction} onSelect={this.handleSelect}>
-                <Carousel.Item>
-                    <img width={900} height={500} alt="900x500" src="/assets/carousel.png" />
-                    <Carousel.Caption>
-                        <h3>First slide label</h3>
-                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                    </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item>
-                    <img width={900} height={500} alt="900x500" src="/assets/carousel.png" />
-                    <Carousel.Caption>
-                        <h3>Second slide label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item>
-                    <img width={900} height={500} alt="900x500" src="/assets/carousel.png" />
-                    <Carousel.Caption>
-                        <h3>Third slide label</h3>
-                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                    </Carousel.Caption>
-                </Carousel.Item>
-            </Carousel>
             <div className="landing-wrapper">
-                <h1>Landing Page</h1>
-                <Resume />
+                <Carousel>
+                    <Carousel.Item>
+                        <img width={900} height={500} alt="ladies-working-together" src="/images/startup-photos.jpg" />
+                        <Carousel.Caption>
+                            <h3>We blur the hiring bias for women and minorities</h3>
+                            {/*<p></p>*/}
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img width={900} height={500} alt="ladies-working-together" src="/images/ladiesworking.jpeg" />
+                        <Carousel.Caption>
+                            <h3>Upload resumes on our portal</h3>
+                            
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img width={900} height={500} alt="ladies-working-together" src="/images/women-tech.jpeg" />
+                        <Carousel.Caption>
+                            <h3>Add our chrome extension to check your own bias!</h3>
+                            
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                </Carousel>
+                <Jumbotron>
+                    <h1 className="title">Bias Blur</h1>
+                    <p>
+                        Research proves all people have implicit gender and racial bias, particularly during the STEM hiring process.
+                        Bias Blur aims to help solve this problem, by enabling users to upload resumes and return an unbiased version with the candidate names converted to initials.
+                        Through our chrome extension, recruiters, hiring managers, and ordinary people who want to check and challenge their implicit bias can remove names and profile pictures on linkedin profiles.
+                    </p>
+                         <Resume />
+                    <p><Button bsStyle="primary">Learn more</Button></p>
+                </Jumbotron>
+
             </div>
         );
     }
