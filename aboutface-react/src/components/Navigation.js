@@ -14,13 +14,13 @@ class Navigation extends Component {
                                     <Link to="/">home</Link>
                                 </li>
                                 <li className="nav-li">
-                                    <NavLink to="/about">about</NavLink>
-                                </li>
-                                <li className="nav-li">
                                     <NavLink to="/extension">extension</NavLink>
                                 </li>
                                 <li className="nav-li">
                                     <NavLink to="/resume">resume</NavLink>
+                                </li>
+                                                                <li className="nav-li">
+                                    <NavLink to="/team">team</NavLink>
                                 </li>
                                 <li className="nav-li">
                                     <NavLink to="/contact">contact</NavLink>
