@@ -1,0 +1,29 @@
+img{
+	display: none;
+}
+#masthead,
+#primary {
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+  background-color: #fff;
+  padding: 20px !important;
+}
+#masthead {
+  background: none;
+}
+#masthead img, #primary img {
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+}
+
+.pv-top-card-section__name {
+	display: none;
+}
+
+title {
+	text: none;
+}
+
+.pv-profile-section__section-info.section-info{
+	display: none;
+}
