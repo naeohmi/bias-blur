@@ -30,10 +30,19 @@ export default class Resume extends Component {
             .then(axios.spread((html, name) => {
                 this.setState({ html: html.data, name: name.data }, () => {
                     var pTags = document.getElementsByTagName('p')
+                    var aTags = document.body.getElementsByTagName('a')
+                    var first = this.state.name.split(" ")[0] //first name
+                    var last = this.state.name.split(" ")[1] //last name
 
                     for (var i = 0; i < pTags.length; i++) {
-                        if (pTags[i].innerText == this.state.name) {
+                        if (pTags[i].innerText.includes(this.state.name || "@")) {
                             pTags[i].innerText = "Candidate Name"
+                        }
+                    }
+                    //trying to get it to hide the email, linkedin, etc. 
+                    for (var i = 0; i < aTags.length; i++) {
+                        if (aTags[i].innerText.includes(first.toLowerCase())) {
+                            aTags[i].innerText = "Candidate"
                         }
                     }
                 })
