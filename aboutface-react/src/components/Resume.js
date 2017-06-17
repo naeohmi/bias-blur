@@ -54,6 +54,7 @@ export default class Resume extends Component {
         console.log("STATE", this.state)
         return (
             <div>
+
                 <div>
                     <form>
                         <input type="file" name="fileupload" onChange={this.handleChange} id="fileupload" /> <label > Select a file to upload</label>
@@ -63,6 +64,11 @@ export default class Resume extends Component {
                 <div>
                     {this.state.html ? <div dangerouslySetInnerHTML={{ __html: this.state.html }} /> : null}
                 </div>
+
+                <form>
+                 <input type="file" name="fileupload"  onChange={this.handleChange} id="fileupload"/> <label > Select a file to upload</label> 
+                    <input type="submit" value="Submit"/>
+                </form>
             </div>
         )
     }
