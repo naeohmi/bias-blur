@@ -4,13 +4,16 @@
   "private": true,
   "proxy": "http://localhost:3000",
   "dependencies": {
+    "axios": "^0.16.2",
+    "body-parser": "^1.17.2",
     "express": "^4.15.3",
     "react": "^15.6.1",
     "react-bootstrap": "^0.31.0",
     "react-dom": "^15.6.1",
     "react-file-input": "^0.2.5",
     "react-router": "^4.1.1",
-    "react-router-dom": "^4.1.1"
+    "react-router-dom": "^4.1.1",
+    "watson-developer-cloud": "^2.32.1"
   },
   "devDependencies": {
     "react-scripts": "1.0.7"
