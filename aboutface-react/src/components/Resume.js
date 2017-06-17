@@ -24,6 +24,8 @@ export default class Resume extends Component {
                  <input type="file" name="fileupload"  onChange={this.handleChange} id="fileupload"/> <label > Select a file to upload</label> 
                     <input type="submit" value="Submit"/>
                 </form>
+
+                
             </div>
         )
     }

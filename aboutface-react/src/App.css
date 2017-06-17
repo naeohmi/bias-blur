@@ -11,7 +11,12 @@ html {
     color: blue;
     text-transform: uppercase;
 }
-
+.team {
+        font-family: 'Comfortaa', cursive;
+font-size: 35px;
+text-align: center;
+align-content: center;
+}
 .navigation-wrapper {
   display: inline-block;
   width: 100%;
