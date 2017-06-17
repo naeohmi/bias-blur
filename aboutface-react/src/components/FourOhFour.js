@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class LandingPage extends Component {
+class FourOhFour extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -10,10 +10,10 @@ class LandingPage extends Component {
 
     render() {
         return (
-            <div className="landing-wrapper">
-                <h1>Landing Page</h1>
+            <div className="four-oh-four-wrapper">
+                <h1>FourOhFour</h1>
             </div>
         );
     }
 }
-export default LandingPage;
+export default FourOhFour;
