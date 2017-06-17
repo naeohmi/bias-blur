@@ -2,11 +2,15 @@
   "manifest_version": 2,
 
   "name": "Bias Blur Plugin",
-  "description": "This extension will blur out the profile image and replace the name of the applicat with only their initials.",
+  "description": "This extension will blur out the profile image and replace the name of the applicant with only their initials.",
   "version": "1.0",
 
   "browser_action": {
-   "default_icon": "icon.png",
+    "icons":{
+      "16": "../assets/icon-19x19.png",
+      "128": "icons/skin/logo/128.png"
+    },
+   
    "default_popup": "popup.html"
   },
   "permissions": [
