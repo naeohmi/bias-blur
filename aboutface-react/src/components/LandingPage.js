@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import axios from 'axios'
+import Resume from './Resume'
 import { Bootstrap, Jumbotron, Carousel, Button } from 'react-bootstrap';
 
 class LandingPage extends Component {
@@ -21,6 +23,9 @@ class LandingPage extends Component {
     render() {
         return (
             <div className="landing-wrapper">
+
+                <h1>Landing Page</h1>
+
                 <Carousel>
                     <Carousel.Item>
                         <img width={900} height={500} alt="ladies-working-together" src="/images/startup-photos.jpg" />
@@ -54,7 +59,6 @@ class LandingPage extends Component {
                          
                     <p><Button bsStyle="primary">Learn more</Button></p>
                 </Jumbotron>
-
             </div>
         );
     }
