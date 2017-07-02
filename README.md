@@ -16,7 +16,7 @@ The Chrome extension hides names and profile pictures on LinkedIn profiles so th
 https://www.cnet.com/how-to/how-to-install-chrome-extensions-manually/
 * Now you can use the extension on any LinkedIn profile. You shouldn't see the profile picture, candidate name, or other personal information. 
 
-![logo](/assets/Screen Shot 2017-06-30 at 11.20.05 PM.png)
+![screenshot](/assets/bias-blur-screen.png)
 
 ## Resume viewer
 This component allows someone to upload a resume document. The resume will be converted to HTML and the person's name will be hidden. 
